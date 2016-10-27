@@ -32,7 +32,7 @@ The following **required** functionality is complete:
 ### Easy
 * [ ] Add Boostrap4 to the styling. Follow these instructions: https://github.com/twbs/bootstrap-rubygem
 * [ ] Deploy the app to heroku by following: https://devcenter.heroku.com/articles/getting-started-with-rails5
-* [ ] Any user can create a group. The user who creates a group will be the founder of that group
+* [ ] Add a feature so that any user can create a group. The user who creates a group will be the founder of that group
 
 ### Medium
 * [ ] Users can join existing groups by adding themselves to that group
