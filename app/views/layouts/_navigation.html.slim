@@ -1,7 +1,8 @@
 ul class="nav navbar-nav"
   li= link_to('<span class="glyphicon glyphicon-home"></span> Home'.html_safe, root_path)
   - if current_user
-    li= link_to('<span class="glyphicon glyphicon-lock"></span> Secret'.html_safe, secret_path)
+    li= link_to "Hi #{current_user.first_name}!", secret_path
+    li= link_to "Groups", groups_path
   - else
     li= link_to('<span class="glyphicon glyphicon-phone-alt"></span> Contact'.html_safe, contact_path)
     li= link_to('<span class="glyphicon glyphicon-user"></span> About'.html_safe, about_path)

@@ -1,50 +1,47 @@
-# Basic rails 5 application with devise
+# SORA Test: Add Users to Groups
 
-This application has responsive mobile view and navigation, twitter bootstrap, devise, rails 5.0.0 and slim setup.
+This is a test for Rails applicants.
 
-important features are:
+Submitted by: **your_name_here**
 
-* ruby version 2.3.0
+Time spent: **x** hours spent in total
 
-* rails version 5.0.0
+Live demo URL: **you_can_use_heroku**
 
-### Devise configured modules are:
 
-* user log in
+### Prerequisites -- You should have the following installed on your development machine:
 
-* user registration
+1. Ruby, Rails
+2. PostgreSQL (You can use SQLite, but please re-do the search functionality accordingly)
 
-* edit user
 
-### Important instructions:
+## Instructions:
 
-* [strong parameters](https://github.com/plataformatec/devise#strong-parameters): if you add any new user attribute like I have added user first name and last name than you have to add those new attributes to permitted parameters configured inside application controller. 
+1. Fork this repo and clone it to your computer.
+2. Run bundle 
+3. Run rake db:create db:migrate
+4. Start the app with rails s
+3. Please try to complete the User stories
+4. After finishing, upload your code to your own Github account and email your repo URL to soraplatform@gmail.com
 
-### What have I missed:
-I have missed several devise features like email confirmation, reset password, forget password, email handling of devise. I will cover them in my next rails 5 basic application, coming soon IA.
 
-### Setup
+## User Stories
 
-* always use this command for bundle during development in local machine:
+The following **required** functionality is complete:
 
-    bundle install --without production
+### Easy
+* [ ] Add Boostrap4 to the styling. Follow these instructions: https://github.com/twbs/bootstrap-rubygem
+* [ ] Deploy the app to heroku by following: https://devcenter.heroku.com/articles/getting-started-with-rails5
+* [ ] Any user can create a group. The user who creates a group will be the founder of that group
 
-* always use this command for bundle for production environmnet:
+### Medium
+* [ ] Users can join existing groups by adding themselves to that group
+* [ ] Each User can remove themselves from a group 
 
-    bundle install --without development test
+### Hard
+* [ ] The founder will see a list of people who want to join his group. He can then accept or reject each of them
+* [ ] Once accepted, the accepted user's name will appear in the profile of the group (group/show/)
 
-* Database creation and initialization:
 
-    bundle exec rake db:setup
-
-* How to run the test suite:
-
-    no test suite for now
-
-* Services (job queues, cache servers, search engines, etc.)
-
-    nothing yet
-
-* Deployment instructions
-
-    nothing yet
+### Hints:
+- Use the join table provided (users_groups) to have multiple users in a group

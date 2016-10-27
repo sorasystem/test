@@ -1,0 +1,11 @@
+p#notice = notice
+
+h4 #{@group.name}
+
+br Members:
+= link_to "Add yourself to this group"
+br
+br
+= link_to 'Edit', edit_group_path(@group)
+'|
+= link_to 'Back', groups_path
